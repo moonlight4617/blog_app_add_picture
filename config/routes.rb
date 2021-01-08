@@ -46,12 +46,12 @@ Rails.application.routes.draw do
   delete 'posts/:id/delete', to: 'posts#destroy', as: 'p_delete'
 
   # users
-  get 'users/new', to:'users#new', as: 'u_new'
-  post 'users/create', to: 'users#create'
-  get 'users/show', to: 'users#show', as: 'u_show'
-  get 'users/edit', to: 'users#edit', as: 'u_edit'
-  post 'users/update', to: 'users#update', as: 'u_update'
-  post 'users/delete', to: 'users#destroy', as: 'u_delete'
+  get 'user/new', to:'users#new', as: 'u_new'
+  post 'user/create', to: 'users#create'
+  get 'user/show', to: 'users#show', as: 'u_show'
+  get 'user/edit', to: 'users#edit', as: 'u_edit'
+  post 'user/update', to: 'users#update', as: 'u_update'
+  post 'user/delete', to: 'users#destroy', as: 'u_delete'
 
 
 
