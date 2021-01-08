@@ -1,0 +1,12 @@
+<h1>新規登録</h1>
+<%= form_for :user, url: { controller: 'users', action: 'create' } do |f| %>
+  <%= f.label :name, "名前" %>
+  <%= f.text_field :name %><br/>
+  <%= f.label :email, "Eメール" %>
+  <%= f.text_field :email%><br/>
+  <%= f.label :password, "パスワード" %>
+  <%= f.text_field :password %><br/>
+  <%= f.label :password_confirmation, "パスワードの確認" %>
+  <%= f.text_field :password_confirmation %><br/>
+  <%= f.submit "登録" %>
+<% end %>

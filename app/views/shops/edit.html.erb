@@ -1,0 +1,8 @@
+<h1>店舗情報編集</h1>
+<%= form_for :shop, url: { controller: 'shops', action: 'update' } do |f| %>
+  <%= f.label :name, "店名" %>
+  <%= f.text_field :name %><br/>
+  <%= f.label :details, "店舗紹介" %>
+  <%= f.text_area :details %><br/>
+  <%= f.submit "編集" %>
+<% end %>

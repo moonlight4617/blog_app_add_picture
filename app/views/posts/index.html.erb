@@ -1,0 +1,11 @@
+<h1>投稿一覧</h1>
+<ul>
+<%= @posts.each do |post| %>
+  <% if post.dfg != 1 %>
+  <li>
+  <%= link_to post.title, p_show_path(post) %>
+  <%= post.body %>
+  </li>
+  <% end %>
+<% end %>
+</ul>

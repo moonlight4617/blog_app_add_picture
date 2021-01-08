@@ -1,0 +1,15 @@
+<%= link_to "TOP", root_path %>
+
+<% if session[:user_id] == nil %>
+  <%= link_to "借りたい方はこちら", u_login_path %>
+<% else %>
+  <%= link_to "マイアカウント", u_show_path %>
+  <%= link_to "ログアウト", u_logout_path, method: :delete %>
+<% end %>
+
+<% if session[:owner_id] == nil %>
+  <%= link_to "店舗を貸し出したい方はこちら", o_login_path %>
+<% else %>
+  <%= link_to "マイアカウント", o_show_path %>
+
+<% end %>

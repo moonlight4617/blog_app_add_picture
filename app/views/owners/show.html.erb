@@ -1,0 +1,10 @@
+<h1>登録情報</h1>
+
+ログイン中のオーナー：<%= @owner.name %><br/>
+
+<% @shops.each do |shop| %>
+  <%= link_to shop.name, s_show_path(shop) %>
+  <%= link_to "店舗情報編集", s_edit_path(shop) %><br/>
+<% end %>
+<br/>
+<%= link_to "店舗新規登録", s_new_path %>

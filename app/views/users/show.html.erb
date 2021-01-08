@@ -1,0 +1,4 @@
+<h1>ユーザー情報</h1>
+ログイン中のユーザー：<%= @user.name %>
+<%= link_to  "ユーザー情報 編集", u_edit_path %>
+<%= link_to "ログアウト", u_logout_path, method: :delete %>

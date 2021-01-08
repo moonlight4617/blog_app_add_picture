@@ -1,0 +1,12 @@
+<h1>オーナー ログイン</h1>
+<%= form_for :session, url: { controller: 'sessions', action: 'owner_create' } do |f| %>
+  <%= f.label :email, "Eメール" %>
+  <%= f.text_field :email%><br/>
+  <%= f.label :password, "パスワード" %>
+  <%= f.text_field :password %><br/>
+  <%= f.label :remember_me, "次回から自動的にログインする" %>
+  <%= f.check_box :remember_me %><br/>
+  <%= f.submit "ログイン" %><br/>
+
+  <%= link_to "新規登録の方はこちら", o_new_path%>
+<% end %>

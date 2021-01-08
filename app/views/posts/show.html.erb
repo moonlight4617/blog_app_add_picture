@@ -1,0 +1,5 @@
+<h3>タイトル：<%= @post.title %></h3>
+<p>内容：<%= @post.body %></p>
+
+<%= link_to "編集", p_edit_path %>
+<%= link_to "削除", p_delete_path, method: :delete %>
